@@ -18,12 +18,13 @@ $data = mysqli_fetch_array($result);
 </head>
 
 <body class="p-3">
-  <nav class="navbar sticky-top bg-body-tertiary biru">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top bg-white">
     <div class="container-fluid">
       <h1>Curriculum Vitae</h1>
       <a class="navbar-brand" href="Lab_1_form.php">Update</a>
     </div>
   </nav>
+  <div class="container pt-5">
   <div class="card">
     <div class="p-3">
       <img src="<?php echo $data['foto_path']; ?>" alt="Foto Profil">
@@ -57,5 +58,6 @@ $data = mysqli_fetch_array($result);
       <button class="btn btn-primary" onclick="addComment()">Tambah Komentar</button>
     </div>
   </div> -->
+  </div>
 </body>
 </html>
