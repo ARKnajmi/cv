@@ -1,15 +1,58 @@
-img{
-    float: right;
-    width: 200px;
-    height: 200px;
-    margin-left: 15px;
-  }
-  .comment {
-    border: 1px solid #ddd;
-    padding: 10px;
+body{
+    color: #ff6868;
+    background-image: url('bgidx2.jpg');
+    background-size: cover;
+    background-position: fixed;
+    backdrop-filter: blur(px);
+}
+
+.profile{
+    background-color: #1D1E20; 
+    background-size: cover;
+    width: 100px;
+    height: 700px;
+    display: inline-block;
+    position: relative
+}
+
+.divP{
+    background-color: black;
+    position: relative;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    backdrop-filter: blur(1px);
+    box-shadow: 20px 0 40px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.borders{
+    border-radius: 2px;
+}
+
+.borderss{
+    border-left: 2px;
+}
+
+.forP{
+    font-weight: bold;
+}
+
+hr {
+    position: relative;
+    top: 2px;
+    border: none;
+    height: 3px;
+    background: rgb(60, 60, 60);
+    margin-bottom: 45px;
+}
+
+.marleft{
+    margin-left: 20px;
+}
+
+.blacks{
+    background-color: #1D1E20; 
+    color: white;
     margin-bottom: 10px;
-  }
-  .biru{
-    background-color: aliceblue;
-  }
-  
+}

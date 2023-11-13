@@ -17,15 +17,42 @@ $data = mysqli_fetch_array($result);
   <title>Curriculum Vitae</title>
 </head>
 
-<body class="p-3">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top bg-white">
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="background-color: #1D1E20; color: white;">
     <div class="container-fluid">
       <h1>Curriculum Vitae</h1>
       <a class="navbar-brand" href="Lab_1_form.php">Update</a>
     </div>
   </nav>
+
   <div class="container pt-5">
-  <div class="card">
+    <div class="row">
+      <div class="col-4 profile borders" style="background-image: url('<?php echo $data['foto_path']; ?>')">
+        <div class="divP text-center" style="margin-top: 400px;">
+          <h3 class="pt-3" style="color: white; font-weight: bold;"><?php echo $data['nama']; ?></h3>
+          <p class="forP"><?php echo $data['pendidikan']; ?></p>
+          <p class="pt-1 forP"><?php echo $data['email']; ?></p>
+          <p class="forP"><?php echo $data['telepon']; ?></p>
+          <p class="pt-1 forP"><?php echo $data['alamat']; ?></p>
+        </div>
+      </div>
+      <div class="col-8 mt-3 mb-3 borderss" style="background-color:#1D1E20">
+        <div class="mt-5 marleft">
+          <h4 class="text-start mt-5">Pengalaman Kerja</h4>
+          <p class="mt-5" style="color: white;"><?php echo $data['pengalaman_kerja']; ?></p>
+          <hr />
+          <h4 class="text-start">Keterampilan</h4>
+          <p class="mt-5" style="color: white;"><?php echo $data['keterampilan']; ?></</p>
+          <hr />
+          <h4 class="text-start">Websiteku</h4>
+          <p class="mt-5" style="color: white;"><?php echo $data['web']; ?></</p>
+          <hr />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="container pt-5">
+  <div class="card" style="background-color:  #1D1E20;">
     <div class="p-3">
       <img src="<?php echo $data['foto_path']; ?>" alt="Foto Profil">
       <div class="card-body">
@@ -42,7 +69,7 @@ $data = mysqli_fetch_array($result);
         <p class="card-text"><?php echo $data['keterampilan']; ?></p>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- Tampilkan komentar -->
   <!-- <nav class="navbar sticky-top bg-body-tertiary biru">
     <div class="container-fluid">
@@ -59,5 +86,8 @@ $data = mysqli_fetch_array($result);
     </div>
   </div> -->
   </div>
+  <footer class="text-center">
+        <p class="mt-5">&copy; 2023 Created By Ahmad Rafi Kannajmi</p>
+    </footer>
 </body>
 </html>
